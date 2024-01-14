@@ -66,7 +66,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/" element={<Navigate to="/home" />} />
-            <Route path="/portfolio" element={<Navigate to="/home" />} />
+            <Route path="/my-portfolio" element={<Navigate to="/home" />} />
           </Routes>
         </section>
       </div>
