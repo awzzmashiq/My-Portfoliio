@@ -1,48 +1,75 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, NavLink, Routes, Navigate } from 'react-router-dom';
+
+
+function Home() {
+  return (
+    <div>
+      <h2>Welcome to My Portfolio</h2>
+      <p>
+        I am Mohamed Asik Sapteen, a Java Developer with a passion for creating robust and efficient software solutions.
+      </p>
+    </div>
+  );
+}
+
+function About() {
+  return (
+    <div>
+      <h2>About Me</h2>
+      <p>
+        I am a Java backend developer with over 4 years of experience, specializing in SDLC, Agile, and Waterfall methodologies. I hold a Masters of Science in Information Systems from New Jersey Institute of Technology, and a Bachelors in Computer Science and Engineering from Government College of Technology, Tamil Nadu.
+      </p>
+      <p>
+        My technical skills include proficiency in Core Java, Java EE technologies, and frameworks such as Spring MVC, Spring Boot, and Hibernate. I am well-versed in cloud platforms like AWS and Azure, containerization with Docker, and orchestration using Kubernetes.
+      </p>
+      <p>
+        I am passionate about software development and always strive to stay updated with the latest technologies and best practices.
+      </p>
+    </div>
+  );
+}
+
+function Projects() {
+  return (
+    <div>
+      <h2>Projects</h2>
+      <p>
+        Here are some highlights of my recent projects:
+      </p>
+      <ul>
+        <li>Developed a responsive and user-friendly web application using JSF and integrated backend logic with front-end technologies.</li>
+        <li>Led the end-to-end development of a Java-based backend application for a Telecom Product, enhancing capacity, reducing downtime, and improving service response time.</li>
+        <li>Engineered a comprehensive reporting system that consolidated data from multiple sources, increasing team efficiency by 35%.</li>
+      </ul>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <h1>Mohamed Asik Sapteen</h1>
-        <p>Java Developer</p>
-      </header>
-
-      <section className="about">
-        <h2>About Me</h2>
-        <p>4+ years experienced Java developer with expertise in SDLC, Agile, and Waterfall methodologies...</p>
-      </section>
-
-      <section className="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>Java</li>
-          <li>Spring Boot</li>
-          <li>Microservices</li>
-          {/* Add more skills as needed */}
-        </ul>
-      </section>
-
-      <section className="experience">
-        <h2>Experience</h2>
-        {/* Include your work experience details here */}
-        <p>Current: Java Developer at Unum, TX (July 2023 - Present)</p>
-        <p>Previous: Java Developer at Infoway Solutions, India (Oct 2021 - Aug 2022)</p>
-        <p>Earlier: Java Developer at ByteCraft System, India (Jan 2019 - Sep 2021)</p>
-      </section>
-
-      <section className="education">
-        <h2>Education</h2>
-        {/* Include your education details here */}
-        <p>Masters of Science in Information Systems | New Jersey Institute of Technology - Newark, NJ (GPA – 3.7/4.00)</p>
-        <p>Bachelors in Computer Science and Engineering | Government College of Technology - Coimbatore, Tamil Nadu</p>
-      </section>
-
-      <footer>
-        <p>Contact me at: <a href="mailto:ashik.s@itechsavy.me">ashik.s@itechsavy.me</a></p>
-      </footer>
-    </div>
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <nav>
+            <ul>
+              <li><NavLink to="/home">Home</NavLink></li>
+              <li><NavLink to="/about">About</NavLink></li>
+              <li><NavLink to="/projects">Projects</NavLink></li>
+            </ul>
+          </nav>
+        </header>
+        <section>
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/" element={<Navigate to="/home" />} />
+          </Routes>
+        </section>
+      </div>
+    </Router>
   );
 }
 

@@ -1,26 +1,117 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg'); /* Replace with your image path/URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(18, 18, 18, 0.8); /* Increased transparency for the dark black background */
+  color: #d1d1e0; /* Slightly indigo text color for better readability on dark background */
   margin: 0;
-  padding: 0;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
+.App {
   text-align: center;
+}
+
+.App-header {
+  background-color: #282c34; /* Darker black header */
+  padding: 20px;
+  color: #61dafb; /* Indigo header text color */
+  border-bottom: 2px solid #20232a; /* Even darker border */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
 }
 
-.about, .skills, .experience, .education {
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d1d1e0;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #61dafb; /* Lighter indigo on hover */
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: #d1d1e0;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+section {
+  padding: 40px;
+  background-color: rgba(18, 18, 18, 0.9); /* Slightly transparent dark black section background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+h2 {
+  color: #61dafb;
+}
+
+p {
+  color: #d1d1e0;
+  line-height: 1.6;
+}
+
+ul {
+  color: #d1d1e0;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+ul li {
+  background-color: rgba(18, 18, 18, 0.8); /* Slightly transparent darker black for grid boxes */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #282c34;
+  color: #61dafb;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #20232a; /* Darker black on hover */
 }
