@@ -6,6 +6,7 @@ body {
   background-color: rgba(18, 18, 18, 0.8); /* Increased transparency for the dark black background */
   color: #d1d1e0; /* Slightly indigo text color for better readability on dark background */
   margin: 0;
+  background-attachment: fixed;
 }
 
 .App {
