@@ -50,9 +50,15 @@ function Projects() {
         Here are some highlights of my recent projects:
       </p>
       <ul>
+        <li>Design and Development: Responsible for designing and implementing various features and functionalities of the AEPS system using Java and the Spring Boot framework. This may involve creating web services, APIs, and backend logic.
+        </li>
+        <li>Database Integration: Integrating with databases to store and retrieve user data, transaction records, and other relevant information. Spring Boot simplifies database integration with its data access and ORM capabilities.</li>
+        <li>Security: Ensuring the security of the AEPS system, especially in handling sensitive financial and biometric data. This includes implementing authentication and authorization mechanisms, encryption, and other security best practices.</li>
         <li>Developed a responsive and user-friendly web application using JSF and integrated backend logic with front-end technologies.</li>
         <li>Led the end-to-end development of a Java-based backend application for a Telecom Product, enhancing capacity, reducing downtime, and improving service response time.</li>
         <li>Engineered a comprehensive reporting system that consolidated data from multiple sources, increasing team efficiency by 35%.</li>
+        <li>Testing: Writing unit tests, integration tests, and performing thorough testing of your code to ensure it functions as expected. Quality assurance is vital in financial systems like AEPS.</li>
+        <li>Performance Optimization: Ensuring that the system performs well under various loads and optimizing the code and database queries for efficiency.</li>
       </ul>
     </div>
   );
