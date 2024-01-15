@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.ba1b5ff7.css",
-    "main.js": "/my-portfolio/static/js/main.1185ede3.js",
+    "main.css": "/my-portfolio/static/css/main.eca2069f.css",
+    "main.js": "/my-portfolio/static/js/main.05559ec8.js",
     "static/js/787.2dcca737.chunk.js": "/my-portfolio/static/js/787.2dcca737.chunk.js",
     "static/media/ales-nesetril-Im7lZjxeLhg-unsplash.jpg": "/my-portfolio/static/media/ales-nesetril-Im7lZjxeLhg-unsplash.37f9618ac10afa3bfcdd.jpg",
     "index.html": "/my-portfolio/index.html",
-    "main.ba1b5ff7.css.map": "/my-portfolio/static/css/main.ba1b5ff7.css.map",
-    "main.1185ede3.js.map": "/my-portfolio/static/js/main.1185ede3.js.map",
+    "main.eca2069f.css.map": "/my-portfolio/static/css/main.eca2069f.css.map",
+    "main.05559ec8.js.map": "/my-portfolio/static/js/main.05559ec8.js.map",
     "787.2dcca737.chunk.js.map": "/my-portfolio/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba1b5ff7.css",
-    "static/js/main.1185ede3.js"
+    "static/css/main.eca2069f.css",
+    "static/js/main.05559ec8.js"
   ]
 }
