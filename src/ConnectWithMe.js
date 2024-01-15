@@ -10,17 +10,17 @@ function ConnectWithMe() {
             <p>Feel free to explore more about my work and connect with me:</p>
             <ul>
                 <li>
-                    GitHub: <a href="https://github.com/awzzmashiq" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/awzzmashiq" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} /> GitHub
                     </a>
                 </li>
                 <li>
-                    LinkedIn: <a href="https://www.linkedin.com/in/mohamed-asik-sapteen-013947203/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/mohamed-asik-sapteen-013947203/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin} /> linkedin
                     </a>
                 </li>
                 <li>
-                    Email: <a href="mailto:ashik.s@itechsavy.me" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:ashik.s@itechsavy.me" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faEnvelope} /> ashik.s@itechsavy.me
                     </a>
                 </li>
