@@ -116,3 +116,15 @@ ul li {
 .pagination button:hover {
   background-color: #20232a; /* Darker black on hover */
 }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* Set to column instead of row */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 15px 0; /* Adjust the spacing between links */
+}
