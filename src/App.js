@@ -94,9 +94,13 @@ function App() {
           )}
           <nav>
             <ul className={`nav-links ${isOpen && isMobile ? 'open' : ''}`}>
-              <li><NavLink to="/home">Home</NavLink></li>
-              <li><NavLink to="/about">About</NavLink></li>
-              <li><NavLink to="/projects">Projects</NavLink></li>
+              {isOpen && isMobile && (
+                <>
+                  <li><NavLink to="/home">Home</NavLink></li>
+                  <li><NavLink to="/about">About</NavLink></li>
+                  <li><NavLink to="/projects">Projects</NavLink></li>
+                </>
+              )}
             </ul>
           </nav>
         </header>
