@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, NavLink, Routes, Navigate } from 'react-router-dom';
+import ConnectWithMe from './ConnectWithMe';
+import HamburgerMenu from 'react-hamburger-menu';
 
 
 function Home() {
@@ -10,6 +12,9 @@ function Home() {
       <p>
         I am Mohamed Asik Sapteen, a Java Developer with a passion for creating robust and efficient software solutions.
       </p>
+      <footer>
+        <ConnectWithMe />
+      </footer>
     </div>
   );
 }
@@ -47,13 +52,48 @@ function Projects() {
   );
 }
 
+
+
 function App() {
+  const [isOpen, setOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  const toggleMenu = () => {
+    setOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+      setOpen(false); // Close the menu when resizing for a better user experience
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <Router>
       <div className="App">
         <header className="App-header">
+          {isMobile && (
+            <HamburgerMenu
+              isOpen={isOpen}
+              menuClicked={toggleMenu}
+              width={32}
+              height={24}
+              strokeWidth={3}
+              rotate={0}
+              color="white"
+              borderRadius={0}
+              animationDuration={0.5}
+            />
+          )}
           <nav>
-            <ul>
+            <ul className={`nav-links ${isOpen && isMobile ? 'open' : ''}`}>
               <li><NavLink to="/home">Home</NavLink></li>
               <li><NavLink to="/about">About</NavLink></li>
               <li><NavLink to="/projects">Projects</NavLink></li>
