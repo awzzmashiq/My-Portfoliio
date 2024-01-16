@@ -3,12 +3,22 @@ import './App.css';
 import { BrowserRouter as Router, Route, NavLink, Routes, Navigate } from 'react-router-dom';
 import ConnectWithMe from './ConnectWithMe';
 import HamburgerMenu from 'react-hamburger-menu';
+import asikImage from './images/Asik.png';
 
 
 function Home() {
   return (
     <div>
-      <h2>Welcome to My Portfolio</h2>
+      <h2>Make it work, make it right, make it fast</h2>
+      <img
+        src={asikImage}
+        alt="Professional"
+        style={{
+          width: '170px', // Adjust the width as needed
+          height: '160px', // Adjust the height as needed
+          borderRadius: '50%', // This will make it a circle
+        }}
+      />
       <p>
         I am Mohamed Asik Sapteen, a Java Developer with a passion for creating robust and efficient software solutions.
       </p>
