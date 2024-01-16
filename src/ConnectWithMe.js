@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import resumePDF from './assets/Mohamed Asik Sapteen_Resume.pdf';
 
 function ConnectWithMe() {
     return (
@@ -25,6 +26,10 @@ function ConnectWithMe() {
                     </a>
                 </li>
             </ul>
+            <p style={{ marginTop: '20px', fontSize: '18px' }}>
+                Download my resume: <a href={resumePDF} download style={{ textDecoration: 'none', color: '#61dafb', fontWeight: 'bold' }}>Resume.pdf</a>
+            </p>
+
         </div>
     );
 }
